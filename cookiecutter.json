@@ -1,0 +1,6 @@
+{
+  "plugin_name": "myplugin",
+  "package_name": "fair-eva-plugin-{{ cookiecutter.plugin_name }}",
+  "project_slug": "{{ cookiecutter.package_name.replace('-', '_') }}",
+  "first_version": "0.1.0"
+}

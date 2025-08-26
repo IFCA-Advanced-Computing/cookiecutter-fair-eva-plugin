@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fair_eva"]
+namespaces = true
+
+[project]
+version = "{{ cookiecutter.first_version }}"
+name = "{{ cookiecutter.package_name }}"
+requires-python = ">=3.7"
+license = { text = "{{ cookiecutter.license }}" }
+description = ""
+dependencies = {{ cookiecutter.core_dependencies }}

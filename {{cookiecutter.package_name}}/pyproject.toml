@@ -19,6 +19,7 @@ namespaces = true
 "fair_eva.plugin.{{ cookiecutter.plugin_name }}" = ["*.ini"]
 
 [tool.black]
+unstable = true
 line-length = 99
 include = '\.pyi?$'
 exclude = '''

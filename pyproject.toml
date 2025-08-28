@@ -1,0 +1,26 @@
+[project]
+name = "cookiecutter-fair-eva-plugin"
+version = "0.1.0"
+description = "Project structure for FAIR_eva plugins."
+authors = [
+  { name = "Pablo Orviz", email = "orviz@ifca.unican.es" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GPL-3.0-or-later",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+]
+requires-python = ">=3.9"
+dependencies = [
+  "cookiecutter",
+]

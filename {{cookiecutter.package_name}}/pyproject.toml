@@ -11,6 +11,6 @@ namespaces = true
 version = "{{ cookiecutter.first_version }}"
 name = "{{ cookiecutter.package_name }}"
 requires-python = ">=3.7"
-license = { text = "{{ cookiecutter.license }}" }
+license = { text = "{{ cookiecutter.license_text[cookiecutter.license]|default ('GNU General Public License v3.0 or later') }}" }
 description = ""
 dependencies = {{ cookiecutter.core_dependencies }}

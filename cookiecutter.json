@@ -5,11 +5,11 @@
   "project_description": "FAIR-eva '{{ cookiecutter.plugin_name }}' plugin",
   "author_name": "Juan Coneja",
   "author_email": "juan.coneja@ejemplo.org",
-  "license": "GPL-3.0-or-later",
+  "license": ["GPL-3.0-or-later", "Apache-2.0", "MIT", "BSD-3-Clause"],
   "license_text": {
     "GPL-3.0-or-later": "GNU General Public License v3.0 or later",
     "Apache-2.0": "Apache License 2.0",
-	"MIT": "MIT License"
+    "MIT": "MIT License"
   },
   "first_version": "0.1.0",
   "core_dependecies": ["fair_eva @ git+https://github.com/IFCA-Advanced-Computing/FAIR_eva@feature/module_structure"]

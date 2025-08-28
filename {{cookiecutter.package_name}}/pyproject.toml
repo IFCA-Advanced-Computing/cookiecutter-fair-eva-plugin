@@ -8,7 +8,9 @@ name = "{{ cookiecutter.package_name }}"
 requires-python = ">=3.7"
 license = { text = "{{ cookiecutter.license_text[cookiecutter.license]|default ('GNU General Public License v3.0 or later') }}" }
 description = "{{ cookiecutter.project_description }}"
-dependencies = {{ cookiecutter.core_dependencies }}
+dependencies = [
+  "fair_eva @ git+https://github.com/IFCA-Advanced-Computing/FAIR_eva@feature/module_structure"
+]
 
 [tool.setuptools.packages.find]
 where = ["."]

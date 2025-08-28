@@ -11,6 +11,5 @@
     "Apache-2.0": "Apache License 2.0",
     "MIT": "MIT License"
   },
-  "first_version": "0.1.0",
-  "core_dependecies": ["fair_eva @ git+https://github.com/IFCA-Advanced-Computing/FAIR_eva@feature/module_structure"]
+  "first_version": "0.1.0"
 }

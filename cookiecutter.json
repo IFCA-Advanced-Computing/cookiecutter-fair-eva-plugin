@@ -6,5 +6,6 @@
   "author_name": "Juan Coneja",
   "author_email": "juan.coneja@ejemplo.org",
   "license": ["GPL-3.0-or-later", "Apache-2.0", "MIT", "BSD-3-Clause"],
-  "first_version": "0.1.0"
+  "first_version": "0.1.0",
+  "plugin_endpoint": "https://api.ejemplo.org/api/v1"
 }

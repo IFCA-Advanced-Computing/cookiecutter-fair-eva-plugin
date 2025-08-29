@@ -13,7 +13,6 @@ import sys
 from typing import Union
 from types import NotImplementedType
 
-
 logging.basicConfig(
     stream=sys.stdout, level=logging.DEBUG, format="'%(name)s:%(lineno)s' | %(message)s"
 )
@@ -25,13 +24,14 @@ class Plugin(EvaluatorBase):
 
     Essential FAIR indicators are pre-implemented in the parent EvaluatorBase class. The remainder shall be coded as methods within this class.
     """
+
     def __init__(
         self,
         item_id: str,
-        api_endpoint : str = "{{ cookiecutter.plugin_endpoint }}",
-        lang : str = "en",
+        api_endpoint: str = "{{ cookiecutter.plugin_endpoint }}",
+        lang: str = "en",
         config: ConfigParser = ConfigParser(),
-        name : str = "{{ cookiecutter.plugin_name }}",
+        name: str = "{{ cookiecutter.plugin_name }}",
     ):
         """
         :param item_id: (persistent or not) identifier of the dataset, e.g. Digital Object identifier, Handle, or internal.
@@ -56,9 +56,7 @@ class Plugin(EvaluatorBase):
             error_message = f"Problem accessing (meta)data from repository <{api_endpoint}>"
             logger.error(error_message)
             raise Exception(error_message)
-        logger.debug(
-            f"Successfuly obtained metadata from repository: {self.metadata}"
-        )
+        logger.debug(f"Successfuly obtained metadata from repository: {self.metadata}")
 
     def get_metadata(self) -> Union[DataFrame, NotImplementedType]:
         return NotImplemented

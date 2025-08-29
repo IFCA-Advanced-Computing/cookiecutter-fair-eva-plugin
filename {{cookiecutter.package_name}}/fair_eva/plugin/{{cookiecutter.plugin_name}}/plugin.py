@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: Copyright contributors to the FAIR eva project <https://github.com/IFCA-Advanced-Computing/FAIR_eva>
+# SPDX-FileCopyrightText: Copyright contributors to the FAIR eva project
 # SPDX-FileContributor: {{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>
 #
 # SPDX-License-Identifier: {{ cookiecutter.license }}

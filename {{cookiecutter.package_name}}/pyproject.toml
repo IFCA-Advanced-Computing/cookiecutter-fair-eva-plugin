@@ -3,11 +3,25 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-version = "{{ cookiecutter.first_version }}"
 name = "{{ cookiecutter.package_name }}"
+version = "{{ cookiecutter.first_version }}"
+description = "{{ cookiecutter.project_description }}"
 requires-python = ">=3.7"
 license = { file = "LICENSE" }
-description = "{{ cookiecutter.project_description }}"
+readme = { file = "README.md" }
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GPL-3.0-or-later",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+]
 dependencies = [
   "fair_eva @ git+https://github.com/IFCA-Advanced-Computing/FAIR_eva@feature/module_structure"
 ]

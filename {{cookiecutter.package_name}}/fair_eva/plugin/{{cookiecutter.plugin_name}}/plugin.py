@@ -4,11 +4,14 @@
 # SPDX-License-Identifier: {{ cookiecutter.license }}
 
 # coding: utf-8
-
 from configparser import ConfigParser
 import logging
 import fair_eva.api.utils as ut
 from fair_eva.api.evaluator import ConfigTerms, EvaluatorBase
+from pandas import DataFrame
+from typing import Union
+from types import NotImplementedType
+
 
 logging.basicConfig(
     stream=sys.stdout, level=logging.DEBUG, format="'%(name)s:%(lineno)s' | %(message)s"
@@ -26,7 +29,7 @@ class Plugin(EvaluatorBase):
         item_id: str,
         api_endpoint : str = "{{ cookiecutter.plugin_endpoint }}",
         lang : str = "en",
-        config: ConfigParser = None,
+        config: ConfigParser = ConfigParser(),
         name : str = "{{ cookiecutter.plugin_name }}",
     ):
         """
@@ -56,5 +59,5 @@ class Plugin(EvaluatorBase):
             f"Successfuly obtained metadata from repository: {self.metadata}"
         )
 
-    def get_metadata(self):
-        return NotImplementedError
+    def get_metadata(self) -> Union[DataFrame, NotImplementedType]:
+        return NotImplemented

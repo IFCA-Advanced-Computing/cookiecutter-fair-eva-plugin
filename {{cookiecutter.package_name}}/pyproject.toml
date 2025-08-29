@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 version = "{{ cookiecutter.first_version }}"
 name = "{{ cookiecutter.package_name }}"
 requires-python = ">=3.7"
-license = { text = "{{ cookiecutter.license_text[cookiecutter.license]|default ('GNU General Public License v3.0 or later') }}" }
+license = { file = "LICENSE" }
 description = "{{ cookiecutter.project_description }}"
 dependencies = [
   "fair_eva @ git+https://github.com/IFCA-Advanced-Computing/FAIR_eva@feature/module_structure"

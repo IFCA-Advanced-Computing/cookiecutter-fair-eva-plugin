@@ -10,8 +10,7 @@ import sys
 from types import NotImplementedType
 from typing import Union
 
-from fair_eva.api.evaluator import ConfigTerms, EvaluatorBase
-import fair_eva.api.utils as ut
+from fair_eva.api.evaluator import EvaluatorBase
 from pandas import DataFrame
 
 logging.basicConfig(

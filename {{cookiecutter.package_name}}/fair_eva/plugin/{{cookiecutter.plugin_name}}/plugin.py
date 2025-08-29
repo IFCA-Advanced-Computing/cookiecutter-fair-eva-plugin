@@ -6,12 +6,13 @@
 # coding: utf-8
 from configparser import ConfigParser
 import logging
-import fair_eva.api.utils as ut
-from fair_eva.api.evaluator import ConfigTerms, EvaluatorBase
-from pandas import DataFrame
 import sys
-from typing import Union
 from types import NotImplementedType
+from typing import Union
+
+from fair_eva.api.evaluator import ConfigTerms, EvaluatorBase
+import fair_eva.api.utils as ut
+from pandas import DataFrame
 
 logging.basicConfig(
     stream=sys.stdout, level=logging.DEBUG, format="'%(name)s:%(lineno)s' | %(message)s"

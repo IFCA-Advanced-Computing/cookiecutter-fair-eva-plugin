@@ -22,7 +22,8 @@ logger = logging.getLogger("api.plugin")
 class Plugin(EvaluatorBase):
     """A class implements the RDA's FAIR indicators for the <{{ cookiecutter.plugin_name }}> plugin.
 
-    Essential FAIR indicators are pre-implemented in the parent EvaluatorBase class. The remainder shall be coded as methods within this class.
+    Essential FAIR indicators are pre-implemented in the parent EvaluatorBase class. The remainder
+    shall be coded as methods within this class.
     """
 
     def __init__(
@@ -34,7 +35,8 @@ class Plugin(EvaluatorBase):
         name: str = "{{ cookiecutter.plugin_name }}",
     ):
         """
-        :param item_id: (persistent or not) identifier of the dataset, e.g. Digital Object identifier, Handle, or internal.
+        :param item_id: (persistent or not) identifier of the dataset, e.g. DOI, Handle
+        or internal.
         :type item_id: str
         :param api_endpoint: Endpoint from which the metadata is collected.
         :type api_endpoint: str

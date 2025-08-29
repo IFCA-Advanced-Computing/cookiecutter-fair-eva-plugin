@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: Copyright contributors to the FAIR eva project <https://github.com/IFCA-Advanced-Computing/FAIR_eva>
 # SPDX-FileContributor: {{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>
 #
-# SPDX-License-Identifier: {{ cookiecutter.license_text[cookiecutter.license]|default ("GNU General Public License v3.0 or later") }}
+# SPDX-License-Identifier: {{ cookiecutter.license }}
 
 # coding: utf-8
 

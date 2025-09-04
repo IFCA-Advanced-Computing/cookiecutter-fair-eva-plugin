@@ -2,6 +2,7 @@
   "plugin_name": "myplugin",
   "package_name": "fair-eva-plugin-{{ cookiecutter.plugin_name }}",
   "project_slug": "{{ cookiecutter.package_name.replace('-', '_') }}",
+  "project_plugin_name": "{{ cookiecutter.plugin_name.replace('-', '_') }}",
   "project_description": "FAIR-eva '{{ cookiecutter.plugin_name }}' plugin",
   "author_name": "Juan Coneja",
   "author_email": "juan.coneja@ejemplo.org",

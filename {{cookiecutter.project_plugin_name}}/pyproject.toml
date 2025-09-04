@@ -36,7 +36,7 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["fair_eva.plugin.{{ cookiecutter.plugin_name }}"]
+include = ["fair_eva.plugin.{{ cookiecutter.project_plugin_name }}"]
 namespaces = true
 
 [tool.setuptools.package-data]

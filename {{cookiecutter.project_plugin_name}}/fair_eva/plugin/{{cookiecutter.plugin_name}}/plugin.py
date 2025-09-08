@@ -61,4 +61,4 @@ class Plugin(EvaluatorBase):
         logger.debug(f"Successfuly obtained metadata from repository: {self.metadata}")
 
     def get_metadata(self) -> Union[DataFrame, NotImplementedType]:
-        return NotImplemented
+        raise NotImplementedError(f"Method get_metadata() for <{self.name}> plugin not implemented")

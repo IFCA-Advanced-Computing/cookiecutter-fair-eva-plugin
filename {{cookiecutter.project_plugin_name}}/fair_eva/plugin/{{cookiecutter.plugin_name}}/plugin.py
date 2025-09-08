@@ -16,7 +16,8 @@ from pandas import DataFrame
 logging.basicConfig(
     stream=sys.stdout, level=logging.DEBUG, format="'%(name)s:%(lineno)s' | %(message)s"
 )
-logger = logging.getLogger("api.plugin")
+logger = logging.getLogger("fair_eva.api.plugin.evaluation_steps")
+logger_api = logging.getLogger("fair_eva.api.plugin")
 
 
 class Plugin(EvaluatorBase):

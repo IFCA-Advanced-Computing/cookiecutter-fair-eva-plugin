@@ -54,7 +54,7 @@ class Plugin(EvaluatorBase):
 
         # Metadata gathering
         self.metadata = self.get_metadata()
-        if not self.metadata or len(self.metadata) == 0:
+        if self.metadata.empty:
             error_message = f"Problem accessing (meta)data from repository <{api_endpoint}>"
             logger.error(error_message)
             raise Exception(error_message)

@@ -31,7 +31,7 @@ classifiers = [
   "Topic :: Scientific/Engineering",
 ]
 dependencies = [
-  "fair_eva @ git+https://github.com/IFCA-Advanced-Computing/FAIR_eva@feature/module_structure"
+  "fair_eva @ git+https://github.com/IFCA-Advanced-Computing/FAIR_eva@tags/4.0.0"
 ]
 
 [tool.setuptools.packages.find]
